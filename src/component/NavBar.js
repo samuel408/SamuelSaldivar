@@ -39,14 +39,14 @@ function NavBar() {
       
     return (
       <div style={navbarStyle}>
-        <a style={name} >Samuel Saldivar</a>
+        <a href="/" style={name} >Samuel Saldivar</a>
           <a href="https://www.linkedin.com/in/samuel-saldivar-98aa24198/" target="_blank" rel="noopener noreferrer">
         <img src={linkedinLogo} alt="LinkedIn" style={iconStyle} />
       </a>
       <a href="https://github.com/samuel408" target="_blank" rel="noopener noreferrer">
-        <img src={githubLogo} style={iconStyle} />
+        <img src={githubLogo} alt="decoration" style={iconStyle} />
       </a>
-      <a style={linkStyle}>
+      <a href="/" style={linkStyle}>
   <Button  variant="primary"  onClick={handleShowModal} style={{ backgroundColor: '#D48166', border: 'none' }} className="rounded">Contact Me</Button>
 </a>
 {/* Render the ContactModal component */}
