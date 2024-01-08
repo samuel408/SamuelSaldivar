@@ -3,3 +3,4 @@ command = "npm run build"
 publish = "build/"
 node_version = "14"
 npm_version = "6"
+environment = { NODE_SERVER = "https://samuelsaldivar-server-production.up.railway.app/" }
