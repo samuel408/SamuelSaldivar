@@ -39,7 +39,7 @@ function NavBar() {
       
     return (
       <div style={navbarStyle}>
-        <button style={name} >Samuel Saldivar</button>
+        <p style={name} >Samuel Saldivar</p>
           <a href="https://www.linkedin.com/in/samuel-saldivar-98aa24198/" target="_blank" rel="noopener noreferrer">
         <img src={linkedinLogo} alt="LinkedIn" style={iconStyle} />
       </a>
