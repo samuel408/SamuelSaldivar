@@ -15,7 +15,7 @@ function About(){
             <div className="col-md-6">
 
               <div className="text-center">
-                <img src={myPhoto}  className="img-fluid rounded" style={{ width: '150px' }} />
+                <img src={myPhoto} alt="" className="img-fluid rounded" style={{ width: '150px' }} />
               </div>
             </div>
             <div className="col-md-6">
