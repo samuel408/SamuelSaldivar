@@ -1,0 +1,5 @@
+[build]
+command = "npm run build"
+publish = "build/"
+node_version = "14"
+npm_version = "6"
