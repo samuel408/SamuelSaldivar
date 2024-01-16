@@ -3,10 +3,31 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { Container, Row, Col,Card,Button } from 'react-bootstrap';
 
 
+
 function Projects(){
 
     const titleStyle = {
         textAlign: 'center',
+    };
+
+    const cardButtonStyle = {
+      backgroundColor: '#D48166',
+      textAlign: 'center',
+      margin: 'auto',
+    };
+    const personal = () => {
+      window.location.href = 'https://github.com/samuel408/samuelsaldivar';
+    };
+    const techdaily = () => {
+      window.location.href = 'https://github.com/samuel408/tech-daily-blog';
+
+    };
+    const weather = () => {
+      window.location.href = 'https://github.com/samuel408/weather-app';
+    };
+    const covid = () => {
+
+      window.location.href = 'https://github.com/next-gen-solutions/catch-up-on-covid';
     };
 
     return (
@@ -24,7 +45,8 @@ function Projects(){
                         I used express to create a server that will allow me to route to different pages and also to send emails from 
                         the contact page using nodeMailer's API.
                       </Card.Text>
-                      <Button variant="primary">Code</Button>
+                      <Button  onClick={personal} style={cardButtonStyle} variant="">Code</Button>
+                      
                     </Card.Body>
                </Card>
               </Col>
@@ -39,8 +61,7 @@ function Projects(){
                       engage in discussions, and contribute via upvoting. The SQL infrastructure manages user data, posts, comments, 
                       and interactions.
                       </Card.Text>
-                      <Button variant="primary">Code</Button>
-                      <Button variant="primary">Website</Button>
+                      <Button  onClick={techdaily} style={cardButtonStyle} variant="">Code</Button>
 
                     </Card.Body>
                </Card>
@@ -55,9 +76,7 @@ function Projects(){
                       city. Implemented a UV index feature, displaying green for good, orange for moderate, and red for severe ratings. Incorporated a
                       search history.
                       </Card.Text>
-                      <Button variant="primary">Github</Button>
-                      <Button variant="primary">Website</Button>
-
+                      <Button onClick={weather} style={cardButtonStyle} variant="">Code</Button>
                     </Card.Body>
                </Card>
               </Col>
@@ -70,9 +89,7 @@ function Projects(){
                       Developed and collaborated with partner to create a COVID-19 Tracker app using Chart API and a News API. The app features a 
                       user-friendly interface displaying the latest news, an interactive chart, and a country-specific COVID-19 summary. 
                       </Card.Text>
-                      <Button variant="primary">Github</Button>
-                      <Button variant="primary">Website</Button>
-
+                      <Button onClick={covid} style={cardButtonStyle} variant="">Code</Button>
                     </Card.Body>
                </Card>
               </Col>
