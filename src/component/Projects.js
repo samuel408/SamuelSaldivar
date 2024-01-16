@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col,Card,Button } from 'react-bootstrap';
 
 
 function Projects(){
@@ -16,16 +16,43 @@ function Projects(){
             <Row>
               <Col>
                 {/* Content for the first column */}
-                <p>Column 1</p>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="..." alt="Card image cap" />
+                    <Card.Body>
+                      <Card.Title>Card title</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+               </Card>
               </Col>
               
               <Col>
-                {/* Content for the second column */}
-                <p>Column 2</p>
+                {/* Content for the first column */}
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="..." alt="Card image cap" />
+                    <Card.Body>
+                      <Card.Title>Card title</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+               </Card>
               </Col>
               <Col>
-                {/* Content for the third column */}
-                <p>Column 3</p>
+                {/* Content for the first column */}
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="..." alt="Card image cap" />
+                    <Card.Body>
+                      <Card.Title>Card title</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+               </Card>
               </Col>
             </Row>
           </Container>
