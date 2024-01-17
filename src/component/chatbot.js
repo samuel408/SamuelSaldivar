@@ -13,7 +13,7 @@ const ChatBot = () => {
   const sendMessage = async () => {
     try {
       const response = await axios.post(
-        process.env.OPENAI_API_ENDPOINT, // Change this URL to your backend endpoint
+        "https://samuelsaldivar-server-production.up.railway.app/chat", // Change this URL to your backend endpoint
         {
           prompt: userInput,
         }
