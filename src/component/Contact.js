@@ -12,7 +12,7 @@ function Contact({ show, handleClose }) {
   };
   const handleSubmit = () => {
     // Make a POST request to your server's API endpoint
-    fetch(  "https://samuelsaldivar-server-production.up.railway.app/", {
+    fetch( process.env.BACK_END_ENDPOINT, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
