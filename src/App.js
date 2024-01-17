@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from './component/NavBar';
 import About from './component/About';
 import Projects from './component/Projects';
+import Chatbot from './component/chatbot';
 function App() {
   
 
@@ -12,6 +13,7 @@ function App() {
       <NavBar  />
      <About/>
      <Projects/>
+     <Chatbot />
     </div>
   );
 }
